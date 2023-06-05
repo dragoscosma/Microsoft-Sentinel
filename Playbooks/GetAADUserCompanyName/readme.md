@@ -74,9 +74,3 @@ New-AzureADServiceAppRoleAssignment `
     -ResourceId $graph.ObjectId
     
 ![Azure_AD_Enable_User_Deploy_6](Images/Get_AAD_CompanyName-assign_perm2.png)
-
-<br>
-<br>
-<p align="left">
-<a href="https://linkedin.com/in/dragosco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dragosco" height="30" width="40" /></a>
-</p>
