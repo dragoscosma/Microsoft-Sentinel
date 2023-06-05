@@ -11,7 +11,7 @@ This playbook is intended to be automated from Microsoft Sentinel. It will get t
 
 #
 ### Recommendations:
-<h5 align="left"><ul><li>Use a system assigned managed Identity. Location: Logic App - Identity - System assigned - Status: "On"</li></ul></h5>
+<h5 align="left"><ul><li>Use a system assigned managed Identity.</li></ul></h5>
 <h5 align="left"><ul><li>Permissions: Assign Sentinel Responder role and Directory.Read.All to the system assigned identity</li></ul></h5>
 <h6 align="left"><ul><i>Note: Sentinel Responder role will be an Azure RBAC permission and Directory.Read.All is an AAD permission.</ul></i></h6>
 
