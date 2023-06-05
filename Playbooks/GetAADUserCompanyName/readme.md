@@ -42,18 +42,36 @@ Click the one corresponding to the Logic App.
 
 Click on the "**Edit**" button. This will bring us into the Logic Apps Designer.
 
-![Azure_AD_Enable_User_Deploy_4](Images/Azure_AD_Enable_User_Deploy_4.png)
+![Azure_AD_Enable_User_Deploy_4](Images/Get_AAD_CompanyName-create3.png)
 
-Before the playbook can be run, the Azure AD connection will either need to be authorized in the indicated step, or an existing authorized connection may be alternatively selected. This connection can be found under the third step labeled "**For each**".
+Before the playbook can be run, the Azure AD and Sentinel connection will either need to be authorized in the indicated step, or an existing authorized connection may be alternatively selected. 
 
-![Azure_AD_Enable_User_Deploy_5](Images/Azure_AD_Enable_User_Deploy_5.png)
+Create a system assigned managed Identity. Under the Logic App click on: "Identity" - "System assigned", "On". Copy the Object ID.
 
-Expand the "**Connections**" step and click the exclamation point icon next to the name matching the playbook.
-                                                                                                
-![Azure_AD_Enable_User_Deploy_6](Images/Azure_AD_Enable_User_Deploy_6.png)
+![Azure_AD_Enable_User_Deploy_5](Images/Get_AAD_CompanyName-create_identity1.png)
 
-When prompted, sign in to validate the connection.                                                                                                
-![Azure_AD_Enable_User_Deploy_7](Images/Azure_AD_Enable_User_Deploy_7.png)
+In Azure assign this Identity the needed Azure role: Microsoft Sentinel Responder.
+Azure - Subscription - IAM - Add - Add role assignment - choose: "Microsoft Sentinel Responder" - next - under members select: Managed Identity and then choose: "select members".
+Here, choose under managed identity: "Logic app" and then select the newly created app.
+![Azure_AD_Enable_User_Deploy_5](Images/Get_AAD_CompanyName-assign_perm1.png)
+
+For the Azure AD permissions, you need to use PowerShell.
+Commands:
+Connect-AzureAD
+
+$graph = Get-AzureADServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'"
+$Permission = $graph.AppRoles `
+    | where Value -Like "Directory.Read.All" `
+    | Select-Object -First 1
+
+$msi = Get-AzureADServicePrincipal -ObjectId b61cc88f-2349-4574-a704-b597161c52b0
+
+New-AzureADServiceAppRoleAssignment `
+    -Id $Permission.Id `
+    -ObjectId $msi.ObjectId `
+    -PrincipalId $msi.ObjectId `
+    -ResourceId $graph.ObjectId
+![Azure_AD_Enable_User_Deploy_6](Images/Get_AAD_CompanyName-assign_perm2.png)
 
 <br>
 <br>
