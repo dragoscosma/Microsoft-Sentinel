@@ -53,6 +53,7 @@ Create a system assigned managed Identity. Under the Logic App click on: "Identi
 In Azure assign this Identity the needed Azure role: Microsoft Sentinel Responder.
 Azure - Subscription - IAM - Add - Add role assignment - choose: "Microsoft Sentinel Responder" - next - under members select: Managed Identity and then choose: "select members".
 Here, choose under managed identity: "Logic app" and then select the newly created app.
+
 ![Azure_AD_Enable_User_Deploy_5](Images/Get_AAD_CompanyName-assign_perm1.png)
 
 For the Azure AD permissions, you need to use PowerShell.
@@ -71,6 +72,7 @@ New-AzureADServiceAppRoleAssignment `
     -ObjectId $msi.ObjectId `
     -PrincipalId $msi.ObjectId `
     -ResourceId $graph.ObjectId
+    
 ![Azure_AD_Enable_User_Deploy_6](Images/Get_AAD_CompanyName-assign_perm2.png)
 
 <br>
