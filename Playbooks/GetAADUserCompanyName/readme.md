@@ -1,27 +1,3 @@
-
-<h2 align="left"> Get User "CompanyName" attribute from Azure AD and write is as a tag in the Sentinel incident</h2>
-
-<h3 align="left">Author: Dragos Cosma 👋</h3>
-<br>
-<h3 align="left">This Logic App will get the Company Name attribute from Azure AD for every user listed as an entity in the Sentinel incident and post is as a tag in the respective Incident.</h3>
-
-
-<br>
-<br>
-<h3 align="left">Recommndations:</h3>
-<h4 align="left"><ul><li>Use a system assigned managed Identity. Location: Logic App - Identity - System assigned - Status: "On"</li></ul></h4>
-<h4 align="left"><ul><li>Permissions: Assign Sentinel Responder role and Directory.Read.All to the system assigned identity</li></ul></h4>
-<h5 align="left"><ul><i>Note: Sentinel Responder role will be an Azure RBAC permission and Directory.Read.All is an AAD permission.</ul></i></h5>
-<h3 align="left">Screenshots showing the Logic Apps Designer</h3>
-<br>
-<br>
-<br>
-<br>
-<p align="left">
-<a href="https://linkedin.com/in/dragosco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dragosco" height="30" width="40" /></a>
-</p>
-
-
 # Get-AzureAD-CompanyName
 Author: dragoscosma 👋
 
@@ -32,14 +8,11 @@ For any technical questions, please contact dcosma@microsoft.com
 
 This playbook is intended to be automated from Microsoft Sentinel . It will get the CompanyName attribute for every user listed as an entity in the Sentinel Incident and post the value as a tag in the same Sentinel Incident.enable the Azure AD user accounts associated with the entities from Microsoft Sentinel incidents. 
 
-
-#Recommendations:
+#
+### Recommendations:
 <h5 align="left"><ul><li>Use a system assigned managed Identity. Location: Logic App - Identity - System assigned - Status: "On"</li></ul></h5>
 <h5 align="left"><ul><li>Permissions: Assign Sentinel Responder role and Directory.Read.All to the system assigned identity</li></ul></h5>
 <h6 align="left"><ul><i>Note: Sentinel Responder role will be an Azure RBAC permission and Directory.Read.All is an AAD permission.</ul></i></h6>
-
-#Screenshots:
-![Azure_AD_Enable_User_Demo_1](Images/Azure_AD_Enable_User_Demo_1.png)
 
 
 #
@@ -47,14 +20,8 @@ This playbook is intended to be automated from Microsoft Sentinel . It will get 
 
 To configure and deploy this playbook:
 
-Open your browser and ensure you are logged into your Microsoft Sentinel workspace. In a separate tab, open the link to our playbook on the Accelerynt Security GitHub Repository:
 
-https://github.com/Accelerynt-Security/AS-Azure-AD-Enable-User
-
-[![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-Azure-AD-Enable-User%2Fazuredeploy.json)
-[![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FAzure%2FAzure-Sentinel%2Fmaster%2FPlaybooks%2FAS-Azure-AD-Enable-User%2Fazuredeploy.json)
-
-Click the “**Deploy to Azure**” button at the bottom and it will bring you to the custom deployment template.
+Click the “**Deploy to Azure**” button and it will bring you to the custom deployment template.
 
 In the **Project details** section:
 
