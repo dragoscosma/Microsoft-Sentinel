@@ -1,5 +1,6 @@
-<h3 align="center">Hi 👋, I'm Dragos Cosma</h3>
 
+<h3 align="center">Get User Company Name attribute from Azure AD and write is as a tag in the Sentinel incident</h3>
+<h3 align="center">Hi 👋, I'm Dragos Cosma</h3>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=dragoscosma&label=Profile%20views&color=0e75b6&style=flat" alt="dragoscosma" /> </p>
 
 <h3 align="left">Connect with me:</h3>
