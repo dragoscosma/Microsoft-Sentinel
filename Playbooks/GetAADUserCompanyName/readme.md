@@ -19,9 +19,6 @@ This playbook is intended to be automated from Microsoft Sentinel. It will get t
 #
 ### Deployment
 
-To configure and deploy this playbook:
-
-
 Click the “**Deploy to Azure**” button and it will bring you to the custom deployment template.
 
 In the **Project details** section:
@@ -30,20 +27,18 @@ In the **Project details** section:
 
 In the **Instance details** section:  
                                                   
-* **Playbook Name**: This can be left as "**AS-Azure-AD-Enable-User**" or you may change it. 
+* **Playbook Name**: This can be left as "**GetCompanyNameFromAAD**" or you may change it. 
 
 Towards the bottom, click on "**Review + create**". 
 
-![Azure_AD_Enable_User_Deploy_1](Images/Azure_AD_Enable_User_Deploy_1.png)
+![Azure_AD_Enable_User_Deploy_1](Images/Get_AAD_CompanyName-create1.png)
 
 Once the resources have validated, click on "**Create**".
-
-![Azure_AD_Enable_User_Deploy_2](Images/Azure_AD_Enable_User_Deploy_2.png)
 
 The resources should take around a minute to deploy. Once the deployment is complete, you can expand the "**Deployment details**" section to view them.
 Click the one corresponding to the Logic App.
 
-![Azure_AD_Enable_User_Deploy_3](Images/Azure_AD_Enable_User_Deploy_3.png)
+![Azure_AD_Enable_User_Deploy_3](Images/Get_AAD_CompanyName-create2.png)
 
 Click on the "**Edit**" button. This will bring us into the Logic Apps Designer.
 
