@@ -54,7 +54,7 @@ Here, choose under managed identity: "Logic app" and then select the newly creat
 ![Azure_AD_Enable_User_Deploy_5](Images/Get_AAD_CompanyName-assign_perm1.png)
 
 For the Azure AD permissions, you need to use PowerShell.
-Commands:
+Commands (replace the ObjectID with the value from your environment):
 
 Connect-AzureAD
 
