@@ -1,7 +1,7 @@
 # Get-AzureAD-CompanyName
 Author: Dragos Cosma 👋     <a href="https://linkedin.com/in/dragosco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dragosco" height="25" width="30" /></a>
 
-For any technical questions, please contact dcosma@microsoft.com  
+
 
 
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdragoscosma%2FMicrosoft-Sentinel%2Fmaster%2FPlaybooks%2FGetAADUserCompanyName%2Fazuredeploy.json)
