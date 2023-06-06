@@ -40,9 +40,6 @@ Click the one corresponding to the Logic App.
 
 ![Azure_AD_Enable_User_Deploy_3](Images/Get_AAD_CompanyName-create2.png)
 
-Click on the "**Edit**" button. This will bring us into the Logic Apps Designer.
-
-![Azure_AD_Enable_User_Deploy_4](Images/Get_AAD_CompanyName-create3.png)
 
 Before the playbook can be run, the Azure AD and Sentinel connection will either need to be authorized in the indicated step, or an existing authorized connection may be alternatively selected. 
 
