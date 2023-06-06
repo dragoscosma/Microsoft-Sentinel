@@ -1,5 +1,5 @@
 # Get-AzureAD-CompanyName
-Author: dragoscosma 👋     <a href="https://linkedin.com/in/dragosco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dragosco" height="25" width="30" /></a>
+Author: Dragos Cosma 👋     <a href="https://linkedin.com/in/dragosco" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="dragosco" height="25" width="30" /></a>
 
 For any technical questions, please contact dcosma@microsoft.com  
 
@@ -58,6 +58,7 @@ Here, choose under managed identity: "Logic app" and then select the newly creat
 
 For the Azure AD permissions, you need to use PowerShell.
 Commands:
+
 Connect-AzureAD
 
 $graph = Get-AzureADServicePrincipal -Filter "AppId eq '00000003-0000-0000-c000-000000000000'"
