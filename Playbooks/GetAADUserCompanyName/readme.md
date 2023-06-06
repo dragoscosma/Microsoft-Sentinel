@@ -71,4 +71,4 @@ New-AzureADServiceAppRoleAssignment `
     -PrincipalId $msi.ObjectId `
     -ResourceId $graph.ObjectId
     
-![Azure_AD_Enable_User_Deploy_6](Images/Get_AAD_CompanyName-assign_perm2.png)
+![Azure_AD_Enable_User_Deploy_6](Images/Get_AAD_CompanyName-assign_perm_2.png)
