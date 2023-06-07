@@ -7,8 +7,7 @@ Author: Dragos Cosma 👋     <a href="https://linkedin.com/in/dragosco" target=
 [![Deploy to Azure](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdragoscosma%2FMicrosoft-Sentinel%2Fmaster%2FPlaybooks%2FGetAADUserCompanyName%2Fazuredeploy.json)
 [![Deploy to Azure Gov](https://aka.ms/deploytoazuregovbutton)](https://portal.azure.us/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fdragoscosma%2FMicrosoft-Sentinel%2Fmaster%2FPlaybooks%2FGetAADUserCompanyName%2Fazuredeploy.json)
 
-This playbook is intended to be automated from Microsoft Sentinel. It will get the CompanyName attribute for every user listed as an entity in the Sentinel Incident and post the value as a tag in the same Sentinel Incident.enable the Azure AD user accounts associated with the entities from Microsoft Sentinel incidents. 
-
+This playbook is intended to be automated from Microsoft Sentinel. It will get the CompanyName attribute for every user listed as an entity in the Sentinel Incident and post the value as a tag in the same Sentinel Incident.
 #
 ### Recommendations:
 <h5 align="left"><ul><li>Use a system assigned managed Identity.</li></ul></h5>
